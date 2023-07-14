@@ -1,9 +1,10 @@
 import user from '../Json/user.json';
+import { Container } from './Profile.styled';
 
 export const Profile = () => {
   return user.map(data => {
     return (
-      <div className="profile">
+      <Container key={data.id} className="profile">
         <div className="description">
           <img
             src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
@@ -29,7 +30,7 @@ export const Profile = () => {
             <span className="quantity">3000</span>
           </li>
         </ul>
-      </div>
+      </Container>
     );
   });
 };
