@@ -14,5 +14,5 @@ export const List = styled.ul`
 
 export const IsFriendOnline = styled.span`
   border-radius: 50%;
-  border: 5px solid ${({ IsOnline }) => (IsOnline ? 'green' : 'red')};
+  border: 5px solid ${({ status }) => (status ? 'green' : 'red')};
 `;
