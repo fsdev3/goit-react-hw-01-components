@@ -1,21 +1,20 @@
 import { styled } from 'styled-components';
 
 export const Container = styled.div`
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
   background-color: gray;
   width: 400px;
   height: 500px;
-  padding: 100px;
+  padding: 60px;
 `;
 
 export const Info = styled.div`
-  background-color: #a00000;
+  background-color: lightblue;
   width: 400px;
-  /* padding: 10px 0 10px 40px; */
 `;
 
 export const Stats = styled.ul`
-  background-color: red;
+  background-color: lightblue;
   width: 400px;
   list-style: none;
 `;
