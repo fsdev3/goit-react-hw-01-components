@@ -4,6 +4,7 @@ import friends from './Json/friends.json';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList.jsx';
+// prop-types!!!
 
 export const App = () => {
   return (

@@ -1,4 +1,4 @@
-import { List } from './FriendList.styled';
+import { IsFriendOnline, List } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -6,7 +6,7 @@ export const FriendList = ({ friends }) => {
       {friends.map(({ id, isOnline, avatar, name }) => {
         return (
           <li key={id}>
-            <span>{isOnline}</span>
+            <IsFriendOnline IsOnline={isOnline}>{isOnline}</IsFriendOnline>
             <img src={avatar} alt={name} width="48px" />
             <p>{name}</p>
           </li>
