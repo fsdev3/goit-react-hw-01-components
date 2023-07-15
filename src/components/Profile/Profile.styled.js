@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Info = styled.div`
-  background-color: red;
+  background-color: #a00000;
   width: 400px;
   /* padding: 10px 0 10px 40px; */
 `;
