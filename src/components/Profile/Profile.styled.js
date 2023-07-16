@@ -16,30 +16,32 @@ export const Info = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding-top: 70px;
+  padding-bottom: 50px;
   gap: 16px;
 
   box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
   -webkit-box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
   -moz-box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
   img {
-    width: 160px;
+    width: 140px;
     border-radius: 50%;
     border: 2px solid gray;
   }
   p {
-    color: gray;
+    color: #9a9a9a;
+    font-weight: 600;
   }
   p:nth-child(2) {
     font-size: 24px;
-    font-weight: bold;
-    color: gray;
+    font-weight: 700;
+    color: #575757;
+    padding-top: 30px;
   }
 `;
 
 export const Stats = styled.ul`
-  background-color: #e6f4f4;
+  background-color: #e0eded;
   width: 400px;
   list-style: none;
   display: flex;
@@ -62,8 +64,9 @@ export const Stats = styled.ul`
       margin-bottom: 4px;
     }
     span:last-child {
-      font-weight: bold;
-      color: #2c2c2c;
+      font-size: 18px;
+      font-weight: 800;
+      color: #575757;
     }
   }
 `;
