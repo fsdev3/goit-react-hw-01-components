@@ -1,25 +1,32 @@
 import { styled } from 'styled-components';
 
 export const List = styled.ul`
-  margin: 10px auto;
-  background-color: gray;
-  width: 500px;
-  height: 100px;
+  margin: 80px auto;
+  width: 200px;
+  height: 100%;
   align-items: center;
-  display: flex;
-  gap: 20px;
   list-style: none;
 
   li {
-    width: 60px;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin: 12px;
+    gap: 10px;
+    box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
+    -webkit-box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
+    -moz-box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
   }
 
   img {
     width: 48px;
+    height: 48px;
   }
 `;
 
 export const IsFriendOnline = styled.span`
   border-radius: 50%;
-  border: 5px solid ${({ status }) => (status === 'true' ? 'green' : 'red')};
+  border: 8px solid ${({ status }) => (status === 'true' ? 'green' : 'red')};
 `;
