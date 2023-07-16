@@ -1,4 +1,5 @@
 import { Item, List, Uploads } from './Statistics.styled';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ stats }) => {
   return (
@@ -16,4 +17,10 @@ export const Statistics = ({ stats }) => {
       </List>
     </Uploads>
   );
+};
+
+Statistics.propTypes = {
+  id: PropTypes.number,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
 };
