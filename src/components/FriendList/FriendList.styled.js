@@ -8,7 +8,7 @@ export const List = styled.ul`
   list-style: none;
 `;
 
-export const FriendListItem = styled.li`
+export const ListItem = styled.li`
   width: 150px;
   height: 60px;
   display: flex;
@@ -19,7 +19,7 @@ export const FriendListItem = styled.li`
   box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
     -webkit-box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
   -moz - box - shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
-  
+
   img {
     width: 48px;
     height: 48px;
