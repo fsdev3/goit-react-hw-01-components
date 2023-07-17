@@ -45,7 +45,7 @@ export const Item = styled.li`
   color: white;
   gap: 6px;
   padding: 6px 0;
-  background-color: ${({ randomColor }) => randomColor};
+  background-color: ${({ random }) => random};
   span:last-child {
     font-size: 24px;
   }

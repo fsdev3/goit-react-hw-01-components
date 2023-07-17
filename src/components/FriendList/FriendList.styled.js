@@ -27,6 +27,8 @@ export const FriendListItem = styled.li`
 `;
 
 export const IsFriendOnline = styled.span`
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  border: 8px solid ${({ status }) => (status ? 'green' : 'red')};
+  background-color: ${({ status }) => (status ? 'green' : 'red')};
 `;

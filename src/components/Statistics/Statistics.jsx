@@ -12,7 +12,7 @@ export const Statistics = ({ title, stats }) => {
         {stats.map(({ id, label, percentage }) => {
           const randomColor = getRandomHexColor();
           return (
-            <Item key={id} randomColor={randomColor}>
+            <Item key={id} random={randomColor}>
               <span>{label} </span>
               <span>{percentage}</span>
             </Item>
@@ -24,7 +24,12 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  id: PropTypes.arrayOf(PropTypes.number.isRequired),
-  label: PropTypes.arrayOf(PropTypes.string.isRequired),
-  percentage: PropTypes.arrayOf(PropTypes.number.isRequired),
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
