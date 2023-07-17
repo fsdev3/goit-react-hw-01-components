@@ -30,7 +30,7 @@ export const List = styled.ul`
 
   li:first-child {
     background-color: #3096d5;
-    border-radius: 0 0 0 4px;
+    border-radius: 4px 0 0 4px;
   }
   li:nth-child(2) {
     background-color: #af1db4;
@@ -43,7 +43,7 @@ export const List = styled.ul`
   }
   li:last-child {
     background-color: #dcc61f;
-    border-radius: 0 0 4px 0;
+    border-radius: 0 4px 4px 0;
   }
 `;
 

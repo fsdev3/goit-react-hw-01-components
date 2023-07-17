@@ -1,10 +1,11 @@
 import { Item, List, Uploads } from './Statistics.styled';
 import PropTypes from 'prop-types';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <Uploads>
-      <h2>Upload stats</h2>
+      {title ? <h2>{title}</h2> : ''}
+
       <List>
         {stats.map(({ id, label, percentage }) => {
           return (
@@ -20,7 +21,7 @@ export const Statistics = ({ stats }) => {
 };
 
 Statistics.propTypes = {
-  id: PropTypes.number,
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  id: PropTypes.arrayOf(PropTypes.number.isRequired),
+  label: PropTypes.arrayOf(PropTypes.string.isRequired),
+  percentage: PropTypes.arrayOf(PropTypes.number.isRequired),
 };

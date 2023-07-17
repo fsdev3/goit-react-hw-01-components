@@ -6,20 +6,20 @@ export const List = styled.ul`
   height: 100%;
   align-items: center;
   list-style: none;
+`;
 
-  li {
-    width: 150px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    margin: 12px;
-    gap: 10px;
-    box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
+export const FriendListItem = styled.li`
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin: 12px;
+  gap: 10px;
+  box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
     -webkit-box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
-    -moz-box-shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
-  }
-
+  -moz - box - shadow: 2px 3px 6px 3px rgba(181, 181, 181, 0.75);
+  
   img {
     width: 48px;
     height: 48px;
@@ -28,5 +28,5 @@ export const List = styled.ul`
 
 export const IsFriendOnline = styled.span`
   border-radius: 50%;
-  border: 8px solid ${({ status }) => (status === 'true' ? 'green' : 'red')};
+  border: 8px solid ${({ status }) => (status ? 'green' : 'red')};
 `;
