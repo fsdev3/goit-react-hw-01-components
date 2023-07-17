@@ -1,4 +1,6 @@
 import { Item, List, Uploads } from './Statistics.styled';
+import { getRandomHexColor } from './getRandomColor';
+
 import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
@@ -8,8 +10,9 @@ export const Statistics = ({ title, stats }) => {
 
       <List>
         {stats.map(({ id, label, percentage }) => {
+          const randomColor = getRandomHexColor();
           return (
-            <Item key={id}>
+            <Item key={id} randomColor={randomColor}>
               <span>{label} </span>
               <span>{percentage}</span>
             </Item>

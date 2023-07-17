@@ -29,20 +29,10 @@ export const List = styled.ul`
   justify-content: space-between;
 
   li:first-child {
-    background-color: #3096d5;
     border-radius: 4px 0 0 4px;
   }
-  li:nth-child(2) {
-    background-color: #af1db4;
-  }
-  li:nth-child(3) {
-    background-color: #e05a70;
-  }
-  li:nth-child(4) {
-    background-color: #33c3a8;
-  }
+
   li:last-child {
-    background-color: #dcc61f;
     border-radius: 0 4px 4px 0;
   }
 `;
@@ -55,6 +45,7 @@ export const Item = styled.li`
   color: white;
   gap: 6px;
   padding: 6px 0;
+  background-color: ${({ randomColor }) => randomColor};
   span:last-child {
     font-size: 24px;
   }
