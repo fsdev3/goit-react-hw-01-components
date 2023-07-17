@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 export const Table = styled.table`
   margin: 60px auto 0 auto;
